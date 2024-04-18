@@ -46,60 +46,60 @@ async function askName() {
     const answers = await inquirer.prompt({
       name: 'Question1',
       type: 'list',
-      message: 'What is my favorite sport? \n',
+      message: 'What is my favorite type of food? \n',
       choices: [
-        'Tennis',
-        'padel',
-        'Volleyball',
-        'Basketball',
+        'Mexican',
+        'German',
+        'Italian',
+        'Russian',
       ],
     });
   
-    return handleAnswer(answers.question1 === 'Tennis');
+    return handleAnswer(answers.question1 === 'Mexican');
   }
 
   async function question2() {
     const answers = await inquirer.prompt({
       name: 'Question2',
       type: 'list',
-      message: 'What is my favorite childhood movie? \n',
+      message: 'What is my favorite Tennis player? \n',
       choices: [
-        'Toy Story',
-        'The Incredibles',
-        'Cars',
-        'Avengers',
+        'Nadal',
+        'Roger Federer',
+        'Novak',
+        'Thiem',
       ],
     });
   
-    return handleAnswer(answers.question2 === 'Cars 2');
+    return handleAnswer(answers.question2 === 'Roger Federer');
   }
 
   async function question3() {
     const answers = await inquirer.prompt({
       name: 'Question3',
       type: 'list',
-      message: 'What is my favorite artist? \n',
+      message: 'What is my favorite color? \n',
       choices: [
-        'Mana',
-        'Michael Jackson',
-        'Michael Buble',
-        'Myke Towers',
+        'Blue',
+        'Red',
+        'Black',
+        'Yellow',
       ],
     });
   
-    return handleAnswer(answers.question3 === 'Michael Jackson');
+    return handleAnswer(answers.question3 === 'Blue');
   }
 
   async function question4() {
     const answers = await inquirer.prompt({
       name: 'Question4',
       type: 'list',
-      message: 'What is my favorite mexican soccer team? \n',
+      message: 'Do I like going to the gym? \n',
       choices: [
-        'America',
-        'Chivas',
-        'Tigres',
-        'Cruzazul',
+        'No',
+        'Sometimes',
+        'Yes, of course',
+        'I hate it',
       ],
     });
   
@@ -110,12 +110,12 @@ async function askName() {
     const answers = await inquirer.prompt({
       name: 'Question5',
       type: 'list',
-      message: 'What is my favorite console? \n',
+      message: 'What is my favorite programming language? \n',
       choices: [
-        'Xbox',
-        'Nintendo Switch',
-        'Play Station',
-        'GameBoy',
+        'JavaScript',
+        'Python',
+        'C',
+        'Java',
       ],
     });
   
